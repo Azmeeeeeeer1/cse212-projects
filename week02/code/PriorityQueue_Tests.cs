@@ -6,9 +6,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 public class PriorityQueueTests
 {
     [TestMethod]
-    // Scenario: 
-    // Expected Result: 
-    // Defect(s) Found: 
+    // Scenario: Add several items with different priorities.
+    // Expected Result: The item with the highest priority is returned first.
+    // Defect(s) Found: The first two weren't being tested.
     
     public void TestPriorityQueue_1()
     {
@@ -24,9 +24,9 @@ public class PriorityQueueTests
     }
 
     [TestMethod]
-    // Scenario: 
-    // Expected Result: 
-    // Defect(s) Found: 
+    // Scenario: Add multiple items with the same highest priority.
+    // Expected Result: The item added first is returned first.
+    // Defect(s) Found: The later one from the same index was returned instead of the first one added.
     public void TestPriorityQueue_2()
     {
         var priorityQueue = new PriorityQueue();
